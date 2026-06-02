@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "Behind_The_Nineties";
+  src: url(asset/font/Behind-The-Nineties-Md.woff2) format("woff2"), url(asset/font/Behind-The-Nineties-Md.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Aminute";
+  src: url(asset/font/Aminute.woff2) format("woff2"), url(asset/font/Aminute.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: "Aminute";
+}
+
+.hero {
+  padding: 0 5rem;
+  padding-top: 2rem;
+}
+.hero .header {
+  display: flex;
+  /* width: 100%; */
+  justify-content: space-between;
+  align-items: center;
+}
+.hero .header .logo {
+  width: 225px;
+  height: auto;
+}
+.hero .header .logo img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero .header .cta_contactus {
+  font-family: "Aminute";
+  font-size: 22px;
+  padding: 8px 20px;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  background: linear-gradient(#f2f2f2, #f2f2f2) padding-box, linear-gradient(to right, #2bf2e5, #073ce6, #ff40c4, #f22222, #ffb300) border-box;
+}
+.hero .hero_content {
+  display: flex;
+  margin-top: 5rem;
+  align-items: center;
+}
+.hero .hero_content img {
+  width: 50rem;
+  height: auto;
+}
+.hero .hero_content .hero_cta_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.hero .hero_content .hero_cta_content h2 {
+  font-size: 5rem;
+  font-weight: 400;
+  font-family: "Aminute";
+  line-height: 0.8;
+}
+.hero .hero_content .hero_cta_content h1 {
+  font-size: 8rem;
+  font-weight: 500;
+  font-family: "Behind_The_Nineties";
+  line-height: 1;
+  font-style: italic;
+  text-align: center;
+}
+.hero .hero_content .hero_cta_content .cta_contactus {
+  font-family: "Aminute";
+  font-size: 22px;
+  padding: 8px 20px;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  background: linear-gradient(#f2f2f2, #f2f2f2) padding-box, linear-gradient(to right, #2bf2e5, #073ce6, #ff40c4, #f22222, #ffb300) border-box;
+}
+
+.section_two {
+  padding: 0 5rem;
+  margin: 7rem 0rem;
+}
+.section_two .about {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: center;
+  border-bottom: 1px solid #c8c8c8;
+}
+.section_two .about h2 {
+  font-size: 53px;
+  font-weight: 500;
+}
+.section_two .about img {
+  width: 65rem;
+  height: auto;
+}
+.section_two .about .about_content_grid {
+  margin: 4rem 0;
+  display: grid;
+  gap: 12rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.section_two .about .about_content_grid p {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: "Aminute";
+  line-height: 1.4;
+}
+.section_two .brands_grid {
+  display: grid;
+  margin-top: 4rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12rem;
+}
+.section_two .brands_grid .grid_item {
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+}
+.section_two .brands_grid .grid_item img {
+  width: 10rem;
+  height: auto;
+}
+.section_two .brands_grid .grid_item:nth-child(2) img {
+  width: 10rem;
+}
+.section_two .brands_grid .grid_item:nth-child(3) img {
+  width: 6rem;
+}
+.section_two .brands_grid .grid_item .grid_content {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.section_two .brands_grid .grid_item .grid_content p {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.section_three {
+  margin: 7rem 0rem;
+  display: grid;
+  grid-template-columns: 40% 35% 25%;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0rem;
+}
+.section_three .grid_heading {
+  grid-area: 1/1/2/3;
+}
+.section_three .grid_heading span:nth-child(1) {
+  text-align: left;
+  font-size: 53px;
+  vertical-align: super;
+}
+.section_three .grid_heading span:nth-child(2) {
+  font-size: 8rem;
+  font-family: "Behind_The_Nineties";
+  font-weight: 300;
+  font-style: italic;
+}
+.section_three .grid_img {
+  grid-area: 1/3/3/4;
+}
+.section_three .grid_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section_three .grid_question_container {
+  grid-area: 2/1/3/3;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,227 @@
+@font-face {
+  font-family: "Behind_The_Nineties";
+  src:
+    url(asset/font/Behind-The-Nineties-Md.woff2) format("woff2"),
+    url(asset/font/Behind-The-Nineties-Md.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Aminute";
+  src:
+    url(asset/font/Aminute.woff2) format("woff2"),
+    url(asset/font/Aminute.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+$padding: 0 5rem;
+$marginSection: 7rem 0rem;
+$fontAminute: "Aminute";
+$fontNinties: "Behind_The_Nineties";
+$fontBody: 18px;
+$fontCta: 22px;
+$fontHeading: 8rem;
+$fontHeroSub: 5rem;
+$fontSubheading: 53px;
+$bgColor: #f2f2f2;
+
+body {
+  background-color: $bgColor;
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: $fontAminute;
+}
+
+.hero {
+  padding: $padding;
+  padding-top: 2rem;
+  .header {
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      width: 225px;
+      height: auto;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    .cta_contactus {
+      font-family: $fontAminute;
+      font-size: $fontCta;
+      padding: 8px 20px;
+      border-radius: 2rem;
+      border: 2px solid transparent;
+
+      background:
+        linear-gradient($bgColor, $bgColor) padding-box,
+        linear-gradient(to right, #2bf2e5, #073ce6, #ff40c4, #f22222, #ffb300)
+          border-box;
+    }
+  }
+  .hero_content {
+    display: flex;
+    margin-top: 5rem;
+    align-items: center;
+
+    img {
+      width: 50rem;
+      height: auto;
+    }
+    .hero_cta_content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      //   border: 1px solid;
+      gap: 2rem;
+
+      h2 {
+        font-size: $fontHeroSub;
+        font-weight: 400;
+        font-family: $fontAminute;
+        line-height: 0.8;
+      }
+
+      h1 {
+        font-size: $fontHeading;
+        font-weight: 500;
+        font-family: $fontNinties;
+        line-height: 1;
+        font-style: italic;
+        text-align: center;
+      }
+      .cta_contactus {
+        font-family: $fontAminute;
+        font-size: $fontCta;
+        padding: 8px 20px;
+        border-radius: 2rem;
+        border: 2px solid transparent;
+
+        background:
+          linear-gradient($bgColor, $bgColor) padding-box,
+          linear-gradient(to right, #2bf2e5, #073ce6, #ff40c4, #f22222, #ffb300)
+            border-box;
+      }
+    }
+  }
+}
+
+.section_two {
+  padding: $padding;
+  margin: $marginSection;
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: center;
+    border-bottom: 1px solid #c8c8c8;
+    h2 {
+      font-size: $fontSubheading;
+      font-weight: 500;
+    }
+    img {
+      width: 65rem;
+      height: auto;
+    }
+    .about_content_grid {
+      margin: 4rem 0;
+      display: grid;
+      gap: 12rem;
+      grid-template-columns: 1fr 1fr 1fr;
+      p {
+        font-size: $fontBody;
+        font-weight: 100;
+        font-family: $fontAminute;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  .brands_grid {
+    display: grid;
+    margin-top: 4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12rem;
+    .grid_item {
+      display: flex;
+      gap: 3rem;
+      flex-direction: column;
+      img {
+        width: 10rem;
+        height: auto;
+      }
+      &:nth-child(2) {
+        img {
+          width: 10rem;
+        }
+      }
+      &:nth-child(3) {
+        img {
+          width: 6rem;
+        }
+      }
+      .grid_content {
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+        p {
+          font-size: $fontBody;
+          font-weight: 100;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}
+
+.section_three {
+  //   padding: $padding;
+  margin: $marginSection;
+  display: grid;
+  grid-template-columns: 40% 35% 25%;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0rem;
+  .grid {
+    // margin-left: 5rem;
+  }
+
+  .grid_heading {
+    grid-area: 1 / 1 / 2 / 3;
+    //   grid-column: 1 / span 2;
+    span {
+      &:nth-child(1) {
+        text-align: left;
+        font-size: $fontSubheading;
+        vertical-align: super;
+      }
+
+      &:nth-child(2) {
+        font-size: $fontHeading;
+        font-family: $fontNinties;
+        font-weight: 300;
+        font-style: italic;
+      }
+    }
+  }
+  .grid_img {
+    grid-area: 1 / 3 / 3 / 4;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .grid_question_container {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+}
