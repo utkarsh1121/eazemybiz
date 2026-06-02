@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37.932" height="37.932" viewBox="0 0 37.932 37.932">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2bf2e5"/>
+      <stop offset="0.184" stop-color="#073ce6"/>
+      <stop offset="0.485" stop-color="#ff40c4"/>
+      <stop offset="0.73" stop-color="#f22222"/>
+      <stop offset="1" stop-color="#ffb300"/>
+    </linearGradient>
+  </defs>
+  <path id="Icon_ion-md-arrow-down" data-name="Icon ion-md-arrow-down" d="M19.5.427v23.81l8.417-8.417,2.1,2.18L18,30.023,5.977,18l2.1-2.1L16.5,24.237V.427Z" transform="translate(-4.528 20.928) rotate(-45)" fill="url(#linear-gradient)"/>
+</svg>
