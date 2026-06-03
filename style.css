@@ -153,14 +153,16 @@ body {
 }
 
 .section_three {
-  margin: 7rem 0rem;
   display: grid;
+  background-color: #f9f9f9;
   grid-template-columns: 40% 35% 25%;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: auto 1fr;
   gap: 0rem;
 }
 .section_three .grid_heading {
   grid-area: 1/1/2/3;
+  margin-left: 5rem;
+  padding: 3rem 0rem;
 }
 .section_three .grid_heading span:nth-child(1) {
   text-align: left;
@@ -184,4 +186,132 @@ body {
 }
 .section_three .grid_question_container {
   grid-area: 2/1/3/3;
+  display: grid;
+  grid-template-columns: 37.19rem 1fr;
+}
+.section_three .grid_question_container .options {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e5e5;
+  justify-content: space-around;
+  align-items: center;
+}
+.section_three .grid_question_container .options div {
+  font-size: 53px;
+  font-weight: 500;
+  font-family: "Behind_The_Nineties";
+  padding: 3rem 0;
+}
+.section_three .grid_question_container .options .option_two {
+  border-bottom: 1px solid #c8c8c8;
+  border-top: 1px solid #c8c8c8;
+}
+.section_three .grid_question_container .result .result_one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+.section_three .grid_question_container .result .result_one ul {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  max-width: 67%;
+}
+.section_three .grid_question_container .result .result_one ul li {
+  font-size: 18px;
+}
+.section_three .grid_question_container .result .result_one .cta_contactus {
+  font-family: "Aminute";
+  font-size: 22px;
+  padding: 8px 20px;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: linear-gradient(#f2f2f2, #f2f2f2) padding-box, linear-gradient(to right, #2bf2e5, #073ce6, #ff40c4, #f22222, #ffb300) border-box;
+}
+
+.build_op_transfer {
+  padding: 0 5rem;
+  background-color: #FFFFFF;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.build_op_transfer .heading_container {
+  display: flex;
+  flex-direction: row;
+}
+.build_op_transfer .heading_container .heading {
+  letter-spacing: 5px;
+}
+.build_op_transfer .heading_container .heading h5 {
+  font-size: 8rem;
+  font-family: "Behind_The_Nineties";
+  font-style: italic;
+  font-weight: 100;
+}
+.build_op_transfer .heading_container .heading p {
+  font-size: 18px;
+}
+.build_op_transfer .progbar_section {
+  margin-top: 5rem;
+}
+.build_op_transfer .progbar_section .images {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100rem;
+  gap: 3rem;
+}
+.build_op_transfer .progbar_section .images .image_item {
+  width: 100%;
+}
+.build_op_transfer .progbar_section .images .image_item .img {
+  width: 5rem;
+  height: auto;
+}
+.build_op_transfer .progbar_section .images .bar_timeline {
+  width: 100%;
+}
+.build_op_transfer .progbar_section .images .bar_timeline .mark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1.4rem;
+}
+.build_op_transfer .progbar_section .images .bar_timeline .mark .circle {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background: linear-gradient(#f2f2f2, #f2f2f2) padding-box, linear-gradient(to right, #2bf2e5, #073ce6, #ff40c4, #f22222, #ffb300) border-box;
+}
+.build_op_transfer .progbar_section .images .bar_timeline .mark .line {
+  width: 1px;
+  height: 4rem;
+  background: linear-gradient(to bottom, #2bf2e5, #073ce6, #ff40c4, #f22222, #ffb300);
+}
+.build_op_transfer .progbar_section .images .bar_timeline .content_heading {
+  margin: 1rem 0;
+}
+.build_op_transfer .progbar_section .images .bar_timeline .content_heading p {
+  font-size: 18px;
+}
+.build_op_transfer .progbar_section .images .bar_timeline .content_heading h6 {
+  font-size: 18px;
+  color: #f3311e;
+}
+.build_op_transfer .progbar_section .images .bar_timeline p {
+  font-size: 18px;
+  font-weight: 100;
+}
+.build_op_transfer .progbar_section .preg_bar {
+  width: 100%;
+  background-color: gray;
+  border-radius: 16px;
+  margin: 1.5rem 0rem;
+  height: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

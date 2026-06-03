@@ -186,10 +186,11 @@ body {
 
 .section_three {
   //   padding: $padding;
-  margin: $marginSection;
+  // margin: $marginSection;
   display: grid;
+  background-color: #f9f9f9;
   grid-template-columns: 40% 35% 25%;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: auto 1fr;
   gap: 0rem;
   .grid {
     // margin-left: 5rem;
@@ -197,6 +198,9 @@ body {
 
   .grid_heading {
     grid-area: 1 / 1 / 2 / 3;
+    margin-left: 5rem;
+    padding: 3rem 0rem;
+
     //   grid-column: 1 / span 2;
     span {
       &:nth-child(1) {
@@ -223,5 +227,180 @@ body {
   }
   .grid_question_container {
     grid-area: 2 / 1 / 3 / 3;
+    // border: 1px solid;
+    display: grid;
+    grid-template-columns: 37.19rem 1fr;
+
+    .options {
+      // border: 1px solid;
+      display: flex;
+      flex-direction: column;
+      background-color: #e5e5e5;
+      justify-content: space-around;
+      align-items: center;
+      div {
+        font-size: $fontSubheading;
+        font-weight: 500;
+        font-family: $fontNinties;
+        padding: 3rem 0;
+      }
+      .option_two {
+        border-bottom: 1px solid #c8c8c8;
+        border-top: 1px solid #c8c8c8;
+      }
+      // flex-grow: 1;
+      // gap: 3re;
+    }
+    .result {
+      // border: 1px solid;
+      .result_one {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 5rem;
+
+        ul {
+          display: flex;
+          gap: 1.5rem;
+          flex-direction: column;
+          max-width: 67%;
+          li {
+            font-size: $fontBody;
+          }
+        }
+
+        .cta_contactus {
+          font-family: $fontAminute;
+          font-size: $fontCta;
+          padding: 8px 20px;
+          border-radius: 2rem;
+          border: 2px solid transparent;
+          width: fit-content;
+
+          background:
+            linear-gradient($bgColor, $bgColor) padding-box,
+            linear-gradient(
+                to right,
+                #2bf2e5,
+                #073ce6,
+                #ff40c4,
+                #f22222,
+                #ffb300
+              )
+              border-box;
+        }
+      }
+    }
+  }
+}
+
+.build_op_transfer {
+  padding: $padding;
+  background-color: #FFFFFF;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  .heading_container {
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+    .heading {
+      letter-spacing: 5px;
+      h5 {
+        font-size: $fontHeading;
+        font-family: $fontNinties;
+        font-style: italic;
+        font-weight: 100;
+        // line-height: 171px;
+      }
+      p {
+        font-size: $fontBody;
+      }
+    }
+  }
+  .progbar_section {
+    margin-top: 5rem;
+    .images {
+      display: flex;
+      // align-items: center;
+      justify-content: space-between;
+      max-width: 100rem;
+      gap: 3rem;
+      .image_item {
+        width: 100%;
+        .img {
+          width: 5rem;
+          height: auto;
+        }
+      }
+
+      .bar_timeline {
+        // border: 2px solid;
+        width: 100%;
+        .mark {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 1.4rem;
+
+          // border: 2px solid black;
+          .circle {
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            border: 1px solid transparent;
+            background:
+              linear-gradient($bgColor, $bgColor) padding-box,
+              linear-gradient(
+                  to right,
+                  #2bf2e5,
+                  #073ce6,
+                  #ff40c4,
+                  #f22222,
+                  #ffb300
+                )
+                border-box;
+          }
+          .line {
+            width: 1px; // thickness
+            height: 4rem;
+
+            background: linear-gradient(
+              to bottom,
+              #2bf2e5,
+              #073ce6,
+              #ff40c4,
+              #f22222,
+              #ffb300
+            );
+          }
+        }
+        .content_heading {
+          margin: 1rem 0;
+          p {
+            font-size: $fontBody;
+          }
+          h6 {
+            font-size: $fontBody;
+            color: #f3311e;
+          }
+        }
+        p {
+          font-size: $fontBody;
+          font-weight: 100;
+        }
+      }
+    }
+    .preg_bar {
+      width: 100%;
+      background-color: gray;
+      // border: 8px solid gray;
+      border-radius: 16px;
+      margin: 1.5rem 0rem;
+      height: 1.5rem;
+      // position: relative;
+    }
   }
 }
