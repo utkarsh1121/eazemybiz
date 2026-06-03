@@ -67,7 +67,7 @@ body {
   gap: 2rem;
 }
 .hero .hero_content .hero_cta_content h2 {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 400;
   font-family: "Aminute";
   line-height: 0.8;
@@ -132,14 +132,14 @@ body {
   flex-direction: column;
 }
 .section_two .brands_grid .grid_item img {
-  width: 10rem;
+  width: 12rem;
   height: auto;
 }
 .section_two .brands_grid .grid_item:nth-child(2) img {
-  width: 10rem;
+  width: 9rem;
 }
 .section_two .brands_grid .grid_item:nth-child(3) img {
-  width: 6rem;
+  width: 4.4rem;
 }
 .section_two .brands_grid .grid_item .grid_content {
   display: flex;
@@ -193,8 +193,9 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #e5e5e5;
+  padding-left: 5rem;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 }
 .section_three .grid_question_container .options div {
   font-size: 53px;
@@ -223,6 +224,9 @@ body {
 .section_three .grid_question_container .result .result_one ul li {
   font-size: 18px;
 }
+.section_three .grid_question_container .result .result_one ul li::marker {
+  color: #a5a5a5;
+}
 .section_three .grid_question_container .result .result_one .cta_contactus {
   font-family: "Aminute";
   font-size: 22px;
@@ -246,12 +250,16 @@ body {
 }
 .build_op_transfer .heading_container .heading {
   letter-spacing: 5px;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
 }
 .build_op_transfer .heading_container .heading h5 {
   font-size: 8rem;
   font-family: "Behind_The_Nineties";
   font-style: italic;
   font-weight: 100;
+  line-height: 1;
 }
 .build_op_transfer .heading_container .heading p {
   font-size: 18px;
@@ -287,7 +295,7 @@ body {
   width: 20px;
   border-radius: 50%;
   border: 1px solid transparent;
-  background: linear-gradient(#f2f2f2, #f2f2f2) padding-box, linear-gradient(to right, #2bf2e5, #073ce6, #ff40c4, #f22222, #ffb300) border-box;
+  background: linear-gradient(white, white) padding-box, linear-gradient(to right, #2bf2e5, #073ce6, #ff40c4, #f22222, #ffb300) border-box;
 }
 .build_op_transfer .progbar_section .images .bar_timeline .mark .line {
   width: 1px;
@@ -295,10 +303,11 @@ body {
   background: linear-gradient(to bottom, #2bf2e5, #073ce6, #ff40c4, #f22222, #ffb300);
 }
 .build_op_transfer .progbar_section .images .bar_timeline .content_heading {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 .build_op_transfer .progbar_section .images .bar_timeline .content_heading p {
   font-size: 18px;
+  color: #494949;
 }
 .build_op_transfer .progbar_section .images .bar_timeline .content_heading h6 {
   font-size: 18px;
@@ -312,7 +321,7 @@ body {
   width: 100%;
   background-color: gray;
   border-radius: 16px;
-  margin: 1.5rem 0rem;
+  margin: 2rem 0rem;
   height: 1.5rem;
 }
 
@@ -323,7 +332,7 @@ body {
   background-color: #292929;
 }
 .section_five .content_container {
-  margin: 5rem 0;
+  margin: 7rem 0rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -454,6 +463,9 @@ body {
 }
 .footer_container .footer_content .footer_cta .cta_link {
   font-size: 22px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 .footer_container .footer_content .footer_cta .cta_link span {
   display: inline-block;
@@ -485,6 +497,6 @@ body {
   filter: invert(1);
 }
 .footer_container .map_main_container .footer_logo p {
-  color: #6E6E6E;
+  color: #6e6e6e;
   font-size: 16px;
 }/*# sourceMappingURL=style.css.map */

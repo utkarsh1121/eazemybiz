@@ -29,7 +29,7 @@ $fontBody: 18px;
 $fontBodySm: 16px;
 $fontCta: 22px;
 $fontHeading: 8rem;
-$fontHeroSub: 5rem;
+$fontHeroSub: 6rem;
 $fontSubheading: 53px;
 $bgColor: #f2f2f2;
 
@@ -158,17 +158,17 @@ body {
       gap: 3rem;
       flex-direction: column;
       img {
-        width: 10rem;
+        width: 12rem;
         height: auto;
       }
       &:nth-child(2) {
         img {
-          width: 10rem;
+          width: 9rem;
         }
       }
       &:nth-child(3) {
         img {
-          width: 6rem;
+          width: 4.4rem;
         }
       }
       .grid_content {
@@ -233,12 +233,12 @@ body {
     grid-template-columns: 37.19rem 1fr;
 
     .options {
-      // border: 1px solid;
       display: flex;
       flex-direction: column;
       background-color: #e5e5e5;
+      padding-left: 5rem;
       justify-content: space-around;
-      align-items: center;
+      align-items: flex-start;
       div {
         font-size: $fontSubheading;
         font-weight: 500;
@@ -267,8 +267,12 @@ body {
           gap: 1.5rem;
           flex-direction: column;
           max-width: 67%;
+
           li {
             font-size: $fontBody;
+            &::marker {
+              color: #a5a5a5;
+            }
           }
         }
 
@@ -308,12 +312,15 @@ body {
     // align-items: center;
     .heading {
       letter-spacing: 5px;
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
       h5 {
         font-size: $fontHeading;
         font-family: $fontNinties;
         font-style: italic;
         font-weight: 100;
-        // line-height: 171px;
+        line-height: 1;
       }
       p {
         font-size: $fontBody;
@@ -353,7 +360,7 @@ body {
             border-radius: 50%;
             border: 1px solid transparent;
             background:
-              linear-gradient($bgColor, $bgColor) padding-box,
+              linear-gradient(white, white) padding-box,
               linear-gradient(
                   to right,
                   #2bf2e5,
@@ -379,9 +386,10 @@ body {
           }
         }
         .content_heading {
-          margin: 1rem 0;
+          margin: 2rem 0;
           p {
             font-size: $fontBody;
+            color: #494949;
           }
           h6 {
             font-size: $fontBody;
@@ -399,7 +407,7 @@ body {
       background-color: gray;
       // border: 8px solid gray;
       border-radius: 16px;
-      margin: 1.5rem 0rem;
+      margin: 2rem 0rem;
       height: 1.5rem;
       // position: relative;
     }
@@ -413,7 +421,7 @@ body {
 
   background-color: #292929;
   .content_container {
-    margin: 5rem 0;
+    margin: $marginSection;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -563,6 +571,9 @@ body {
       justify-content: space-between;
       .cta_link {
         font-size: $fontCta;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
         span {
           display: inline-block;
           font-size: $fontCta;
@@ -605,7 +616,7 @@ body {
         filter: invert(1);
       }
       p {
-        color: #6E6E6E;
+        color: #6e6e6e;
         font-size: $fontBodySm;
       }
     }
