@@ -236,7 +236,7 @@ body {
 
 .build_op_transfer {
   padding: 0 5rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
@@ -314,4 +314,177 @@ body {
   border-radius: 16px;
   margin: 1.5rem 0rem;
   height: 1.5rem;
+}
+
+.section_five {
+  display: flex;
+  padding: 0 5rem;
+  justify-content: center;
+  background-color: #292929;
+}
+.section_five .content_container {
+  margin: 5rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.section_five .content_container .heading p {
+  font-size: 53px;
+  color: #fff;
+  text-align: center;
+}
+.section_five .content_container .heading h6 {
+  font-size: 8rem;
+  font-family: "Behind_The_Nineties";
+  color: #fff;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1;
+}
+.section_five .content_container p {
+  font-size: 40px;
+  color: #858585;
+}
+.section_five .content_container .cta_contactus {
+  font-family: "Aminute";
+  font-size: 22px;
+  padding: 8px 20px;
+  border-radius: 2rem;
+  color: white;
+  border: 2px solid transparent;
+  background: linear-gradient(#292929, #292929) padding-box, linear-gradient(to right, #2bf2e5, #073ce6, #ff40c4, #f22222, #ffb300) border-box;
+}
+
+.faq-section {
+  background-color: #f0efed;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+.faq-section .faq-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.faq-section .faq-left {
+  background-color: #f0efed;
+  display: flex;
+  align-items: center;
+}
+.faq-section .faq-left .faq-title {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+.faq-section .faq-left .faq-title .faq-heading_fa {
+  font-weight: 500;
+  font-size: 53px;
+  color: #2a2a2a;
+}
+.faq-section .faq-left .faq-title .faq-heading {
+  font-family: "Behind_The_Nineties";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 8rem;
+  color: #2a2a2a;
+}
+.faq-section .faq-right {
+  background-color: #f0efed;
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 0rem 6rem 5rem;
+}
+.faq-section .faq-right .faq-item {
+  border-bottom: 1px solid #e0ddd8;
+}
+.faq-section .faq-right .faq-item .faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  font-size: 18px;
+  font-weight: 500;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.faq-section .faq-right .faq-item .faq-question .faq-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+.faq-section .faq-right .faq-item .faq-answer {
+  padding-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #777777;
+}
+.faq-section .faq-right .faq-item .faq-answer p {
+  margin: 0;
+}
+
+.footer_container {
+  background-color: #1d1d1d;
+}
+.footer_container .footer_content {
+  padding: 0 5rem;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
+}
+.footer_container .footer_content .email {
+  font-size: 8rem;
+  font-family: "Behind_The_Nineties";
+  line-height: 1;
+}
+.footer_container .footer_content .question {
+  font-size: 53px;
+  color: #ffffff;
+}
+.footer_container .footer_content .footer_cta {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_container .footer_content .footer_cta .cta_link {
+  font-size: 22px;
+}
+.footer_container .footer_content .footer_cta .cta_link span {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bolder;
+  background: linear-gradient(to right, #2bf2e5, #073ce6, #ff40c4, #f22222, #ffb300);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer_container .map_main_container {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+.footer_container .map_main_container img {
+  width: 90rem;
+  height: 20rem;
+}
+.footer_container .map_main_container .footer_logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 5rem;
+  gap: 3rem;
+}
+.footer_container .map_main_container .footer_logo img {
+  width: 100%;
+  height: auto;
+  filter: invert(1);
+}
+.footer_container .map_main_container .footer_logo p {
+  color: #6E6E6E;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */

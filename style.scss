@@ -26,6 +26,7 @@ $marginSection: 7rem 0rem;
 $fontAminute: "Aminute";
 $fontNinties: "Behind_The_Nineties";
 $fontBody: 18px;
+$fontBodySm: 16px;
 $fontCta: 22px;
 $fontHeading: 8rem;
 $fontHeroSub: 5rem;
@@ -298,7 +299,7 @@ body {
 
 .build_op_transfer {
   padding: $padding;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding-top: 7rem;
   padding-bottom: 7rem;
   .heading_container {
@@ -401,6 +402,212 @@ body {
       margin: 1.5rem 0rem;
       height: 1.5rem;
       // position: relative;
+    }
+  }
+}
+
+.section_five {
+  display: flex;
+  padding: $padding;
+  justify-content: center;
+
+  background-color: #292929;
+  .content_container {
+    margin: 5rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    .heading {
+      p {
+        font-size: $fontSubheading;
+        color: #fff;
+        text-align: center;
+      }
+      h6 {
+        font-size: $fontHeading;
+        font-family: $fontNinties;
+        color: #fff;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 1;
+      }
+    }
+    p {
+      font-size: 40px;
+      color: #858585;
+    }
+    .cta_contactus {
+      font-family: $fontAminute;
+      font-size: $fontCta;
+      padding: 8px 20px;
+      border-radius: 2rem;
+      color: white;
+      border: 2px solid transparent;
+
+      background:
+        linear-gradient(#292929, #292929) padding-box,
+        linear-gradient(to right, #2bf2e5, #073ce6, #ff40c4, #f22222, #ffb300)
+          border-box;
+    }
+  }
+}
+
+.faq-section {
+  background-color: #f0efed;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: $padding;
+
+  .faq-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .faq-left {
+    background-color: #f0efed;
+    display: flex;
+    align-items: center;
+    // padding: 6rem 5rem;
+
+    .faq-title {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+
+      .faq-heading_fa {
+        // font-family: ;
+        font-weight: 500;
+        font-size: $fontSubheading;
+        color: #2a2a2a;
+      }
+
+      .faq-heading {
+        font-family: $fontNinties;
+        font-style: italic;
+        font-weight: 400;
+        font-size: $fontHeading;
+        color: #2a2a2a;
+        // margin-top: 0.5rem;
+      }
+    }
+  }
+
+  .faq-right {
+    background-color: #f0efed;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    padding: 6rem 0rem 6rem 5rem;
+
+    .faq-item {
+      border-bottom: 1px solid #e0ddd8;
+
+      .faq-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0;
+        font-size: $fontBody;
+        font-weight: 500;
+        // color: #2a2a2a;
+        user-select: none;
+
+        .faq-icon {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .faq-answer {
+        padding-bottom: 24px;
+        font-size: $fontBodySm;
+        line-height: 1.8;
+        color: #777777;
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.footer_container {
+  background-color: #1d1d1d;
+  .footer_content {
+    padding: $padding;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+
+    .email {
+      font-size: $fontHeading;
+      font-family: $fontNinties;
+      line-height: 1;
+    }
+    .question {
+      font-size: $fontSubheading;
+      color: #ffffff;
+    }
+    .footer_cta {
+      font-size: $fontBody;
+      display: flex;
+      justify-content: space-between;
+      .cta_link {
+        font-size: $fontCta;
+        span {
+          display: inline-block;
+          font-size: $fontCta;
+          font-weight: bolder;
+          // border: 2px solid red;
+
+          background: linear-gradient(
+            to right,
+            #2bf2e5,
+            #073ce6,
+            #ff40c4,
+            #f22222,
+            #ffb300
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+
+  .map_main_container {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+    img {
+      width: 90rem;
+      height: 20rem;
+    }
+    .footer_logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 5rem;
+      gap: 3rem;
+
+      img {
+        width: 100%;
+        height: auto;
+        filter: invert(1);
+      }
+      p {
+        color: #6E6E6E;
+        font-size: $fontBodySm;
+      }
     }
   }
 }
