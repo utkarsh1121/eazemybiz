@@ -190,12 +190,37 @@ body {
   grid-template-columns: 37.19rem 1fr;
 }
 .section_three .grid_question_container .options {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  grid-template-rows: repeat(3, 1fr);
   flex-direction: column;
-  background-color: #e5e5e5;
-  padding-left: 5rem;
   justify-content: space-around;
   align-items: flex-start;
+}
+.section_three .grid_question_container .options .opt {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  position: relative;
+}
+.section_three .grid_question_container .options .opt span {
+  z-index: 2;
+}
+.section_three .grid_question_container .options .opt::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #e5e5e5;
+  z-index: 1;
+  transition: all 0.6s;
+}
+.section_three .grid_question_container .options .opt.active::before {
+  width: 0%;
 }
 .section_three .grid_question_container .options div {
   font-size: 53px;
@@ -203,23 +228,29 @@ body {
   font-family: "Behind_The_Nineties";
   padding: 3rem 0;
 }
-.section_three .grid_question_container .options .option_two {
-  border-bottom: 1px solid #c8c8c8;
-  border-top: 1px solid #c8c8c8;
-}
 .section_three .grid_question_container .result .result_one {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 3rem;
   margin-top: 5rem;
 }
+.section_three .grid_question_container .result .result_one.one.active {
+  display: flex;
+}
+.section_three .grid_question_container .result .result_one.two.active {
+  display: flex;
+}
+.section_three .grid_question_container .result .result_one.three.active {
+  display: flex;
+}
 .section_three .grid_question_container .result .result_one ul {
   display: flex;
   gap: 1.5rem;
   flex-direction: column;
   max-width: 67%;
+  width: 35rem;
 }
 .section_three .grid_question_container .result .result_one ul li {
   font-size: 18px;

@@ -12,12 +12,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
-      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
     <script src="script.js" defer></script>
     <section class="hero">
       <header class="header">
@@ -50,7 +46,7 @@
         <img src="asset/about_name.png" alt="" />
         <div class="about_content_grid">
           <div>
-            <p></p>
+            <!-- <p></p> -->
           </div>
           <div>
             <p>
@@ -106,21 +102,59 @@
         <span>How Can</span> <span>We Help?</span>
       </div>
       <div class="grid grid_img">
-        <img src="asset/hwo_Can_we_help.png" alt="" />
+        <img class="" src="asset/hwo_Can_we_help.png" alt="" />
       </div>
       <div class="grid grid_question_container">
         <div class="options">
-          <div class="option_one option_heading">Strategy and Growth</div>
-          <div class="option_two">Sales and Marketing</div>
-          <div class="option_three">Marketing Operations</div>
+          <div onclick="showoptions('result_one')" class="option_one opt active">
+            <span>Strategy and Growth</span>
+          </div>
+          <div onclick="showoptions('result_two')" class="option_two opt">
+            <span>Sales and Marketing</span>
+          </div>
+          <div onclick="showoptions('result_three')" class="option_three opt">
+            <span>Marketing Operations</span>
+          </div>
         </div>
         <div class="result">
-          <div class="result_one">
+          <div class="result_one one active ">
             <ul>
               <li>
                 Strategy Development and Implementation in a price sensitive,
                 fragmented market
               </li>
+              <li>Portfolio</li>
+              <li>Gross Margin Improvement</li>
+              <li>Portfolio Repositioning</li>
+              <li>Managing Channel Partners & ROIs.</li>
+              <li>Portfolio Repositioning</li>
+              <li>Governance, Data Dashboarding.</li>
+            </ul>
+            <button class="cta_contactus">Schedule a Meeting</button>
+          </div>
+
+          <div class="result_one two result_two">
+            <ul>
+              <li>
+                Strategy Development and Implementation in a price sensitive,
+                fragmented market
+              </li>
+              <li>Portfolio</li>
+              <li>Gross Margin Improvement</li>
+              <li>Portfolio Repositioning</li>
+              <li>Managing Channel Partners & ROIs.</li>
+              <!-- <li></li> -->
+              <li>Governance, Data Dashboarding.</li>
+            </ul>
+            <button class="cta_contactus">Schedule a Meeting</button>
+          </div>
+
+          <div class="result_one three result_three">
+            <ul>
+              <!-- <li>
+                Strategy Development and Implementation in a price sensitive,
+                fragmented market
+              </li> -->
               <li>Portfolio</li>
               <li>Gross Margin Improvement</li>
               <li>Portfolio Repositioning</li>

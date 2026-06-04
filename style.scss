@@ -233,12 +233,49 @@ body {
     grid-template-columns: 37.19rem 1fr;
 
     .options {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr;
+
+      align-items: center;
+      grid-template-rows: repeat(3, 1fr);
       flex-direction: column;
-      background-color: #e5e5e5;
-      padding-left: 5rem;
+      // background-image: #e5e5e5;
+      // padding-left: 5rem;
       justify-content: space-around;
       align-items: flex-start;
+      .opt {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        position: relative;
+        span {
+          z-index: 2;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          background-color: #e5e5e5;
+          z-index: 1;
+          transition: all 0.6s;
+        }
+        &.active {
+          &::before {
+            width: 0%;
+          }
+        }
+      }
+      .option_one {
+        // background-image: white;
+      }
+      .option_two {
+        // background-color: white;
+      }
       div {
         font-size: $fontSubheading;
         font-weight: 500;
@@ -246,8 +283,8 @@ body {
         padding: 3rem 0;
       }
       .option_two {
-        border-bottom: 1px solid #c8c8c8;
-        border-top: 1px solid #c8c8c8;
+        // border-bottom: 1px solid #c8c8c8;
+        // border-top: 1px solid #c8c8c8;
       }
       // flex-grow: 1;
       // gap: 3re;
@@ -255,18 +292,25 @@ body {
     .result {
       // border: 1px solid;
       .result_one {
-        display: flex;
+        display: none;
+        // display: flex;
+        // opacity: 0;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         gap: 3rem;
         margin-top: 5rem;
 
+        &.active {
+          display: flex;
+        }
+
         ul {
           display: flex;
           gap: 1.5rem;
           flex-direction: column;
           max-width: 67%;
+          width: 35rem;
 
           li {
             font-size: $fontBody;
