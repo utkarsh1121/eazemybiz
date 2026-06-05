@@ -254,8 +254,8 @@ function showoptions(result) {
 function faqToggle(question) {
   const currentAnswer = question.nextElementSibling;
   const currentIcon = question.querySelector(".faq-icon");
-  const prevQue= currentAnswer.previousElementSibling;
-  const faqItem= question.querySelector(".faq-item");
+  const prevQue = currentAnswer.previousElementSibling;
+  const faqItem = question.querySelector(".faq-item");
   // const item= prevQue.previousElementSibling;
   // console.log(faqItem );
 
@@ -277,7 +277,7 @@ function faqToggle(question) {
     currentIcon.innerHTML = "+";
   }
 
-    if (currentAnswer) {
+  if (currentAnswer) {
     // console.log(currentAnswer)
     gsap.fromTo(
       currentAnswer.querySelectorAll("p, .faq-answer"),
@@ -285,13 +285,12 @@ function faqToggle(question) {
       { y: 0, opacity: 1, duration: 0.4, stagger: 0.08, ease: "power2.out" },
     );
   }
-    if (faqItem) {
-    console.log(faqItem)
+  if (faqItem) {
+    console.log(faqItem);
     gsap.fromTo(
       faqItem.querySelectorAll("div , span"),
       { y: 30, opacity: 0 },
       { y: 0, opacity: 1, duration: 0.4, stagger: 0.08, ease: "power2.out" },
     );
   }
-
 }
