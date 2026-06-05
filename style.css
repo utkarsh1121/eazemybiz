@@ -38,14 +38,14 @@ body {
   height: auto;
 }
 .hero .header .logo img {
-  width: 100%;
+  width: clamp(11rem, 3.2748rem + 9.771vw, 15rem);
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .hero .header .cta_contactus {
   font-family: "Aminute";
-  font-size: 22px;
+  font-size: clamp(1.125rem, 0.6422rem + 0.6107vw, 1.375rem);
   padding: 8px 20px;
   border-radius: 2rem;
   border: 2px solid transparent;
@@ -57,7 +57,7 @@ body {
   align-items: center;
 }
 .hero .hero_content img {
-  width: 50rem;
+  width: clamp(27rem, -17.4198rem + 56.1832vw, 50rem);
   height: auto;
 }
 .hero .hero_content .hero_cta_content {
@@ -67,13 +67,13 @@ body {
   gap: 2rem;
 }
 .hero .hero_content .hero_cta_content h2 {
-  font-size: 6rem;
+  font-size: clamp(4rem, 0.1374rem + 4.8855vw, 6rem);
   font-weight: 400;
   font-family: "Aminute";
   line-height: 0.8;
 }
 .hero .hero_content .hero_cta_content h1 {
-  font-size: 8rem;
+  font-size: clamp(6rem, 2.1374rem + 4.8855vw, 8rem);
   font-weight: 500;
   font-family: "Behind_The_Nineties";
   line-height: 1;
@@ -82,7 +82,7 @@ body {
 }
 .hero .hero_content .hero_cta_content .cta_contactus {
   font-family: "Aminute";
-  font-size: 22px;
+  font-size: clamp(1.125rem, 0.6422rem + 0.6107vw, 1.375rem);
   padding: 8px 20px;
   border-radius: 2rem;
   border: 2px solid transparent;
@@ -101,11 +101,11 @@ body {
   border-bottom: 1px solid #c8c8c8;
 }
 .section_two .about h2 {
-  font-size: 53px;
+  font-size: clamp(2.75rem, 1.6636rem + 1.374vw, 3.3125rem);
   font-weight: 500;
 }
 .section_two .about img {
-  width: 65rem;
+  width: clamp(45rem, 6.374rem + 48.855vw, 65rem);
   height: auto;
 }
 .section_two .about .about_content_grid {
@@ -115,7 +115,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .section_two .about .about_content_grid p {
-  font-size: 18px;
+  font-size: clamp(0.9375rem, 0.5754rem + 0.458vw, 1.125rem);
   font-weight: 100;
   font-family: "Aminute";
   line-height: 1.4;
@@ -124,7 +124,7 @@ body {
   display: grid;
   margin-top: 4rem;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 12rem;
+  gap: clamp(4rem, -11.4504rem + 19.542vw, 12rem);
 }
 .section_two .brands_grid .grid_item {
   display: flex;
@@ -132,14 +132,14 @@ body {
   flex-direction: column;
 }
 .section_two .brands_grid .grid_item img {
-  width: 12rem;
+  width: clamp(9rem, 3.2061rem + 7.3282vw, 12rem);
   height: auto;
 }
 .section_two .brands_grid .grid_item:nth-child(2) img {
-  width: 9rem;
+  width: clamp(6rem, 0.2061rem + 7.3282vw, 9rem);
 }
 .section_two .brands_grid .grid_item:nth-child(3) img {
-  width: 4.4rem;
+  width: clamp(3rem, 0.2962rem + 3.4198vw, 4.4rem);
 }
 .section_two .brands_grid .grid_item .grid_content {
   display: flex;
@@ -147,7 +147,7 @@ body {
   gap: 27px;
 }
 .section_two .brands_grid .grid_item .grid_content p {
-  font-size: 18px;
+  font-size: clamp(0.9375rem, 0.5754rem + 0.458vw, 1.125rem);
   font-weight: 100;
   line-height: 1;
 }
@@ -166,11 +166,11 @@ body {
 }
 .section_three .grid_heading span:nth-child(1) {
   text-align: left;
-  font-size: 53px;
+  font-size: clamp(2.75rem, 1.6636rem + 1.374vw, 3.3125rem);
   vertical-align: super;
 }
 .section_three .grid_heading span:nth-child(2) {
-  font-size: 8rem;
+  font-size: clamp(6rem, 2.1374rem + 4.8855vw, 8rem);
   font-family: "Behind_The_Nineties";
   font-weight: 300;
   font-style: italic;
@@ -223,7 +223,7 @@ body {
   width: 0%;
 }
 .section_three .grid_question_container .options div {
-  font-size: 53px;
+  font-size: clamp(2.75rem, 1.6636rem + 1.374vw, 3.3125rem);
   font-weight: 500;
   font-family: "Behind_The_Nineties";
   padding: 3rem 0;
@@ -247,14 +247,14 @@ body {
   width: 35rem;
 }
 .section_three .grid_question_container .result .result_one ul li {
-  font-size: 18px;
+  font-size: clamp(0.9375rem, 0.5754rem + 0.458vw, 1.125rem);
 }
 .section_three .grid_question_container .result .result_one ul li::marker {
   color: #a5a5a5;
 }
 .section_three .grid_question_container .result .result_one .cta_contactus {
   font-family: "Aminute";
-  font-size: 22px;
+  font-size: clamp(1.125rem, 0.6422rem + 0.6107vw, 1.375rem);
   padding: 8px 20px;
   border-radius: 2rem;
   border: 2px solid transparent;
@@ -280,14 +280,14 @@ body {
   flex-direction: column;
 }
 .build_op_transfer .heading_container .heading h5 {
-  font-size: 8rem;
+  font-size: clamp(6rem, 2.1374rem + 4.8855vw, 8rem);
   font-family: "Behind_The_Nineties";
   font-style: italic;
   font-weight: 100;
   line-height: 1;
 }
 .build_op_transfer .heading_container .heading p {
-  font-size: 18px;
+  font-size: clamp(0.9375rem, 0.5754rem + 0.458vw, 1.125rem);
 }
 .build_op_transfer .progbar_section {
   margin-top: 5rem;
@@ -331,15 +331,15 @@ body {
   margin: 2rem 0;
 }
 .build_op_transfer .progbar_section .images .bar_timeline .content_heading p {
-  font-size: 18px;
+  font-size: clamp(0.9375rem, 0.5754rem + 0.458vw, 1.125rem);
   color: #494949;
 }
 .build_op_transfer .progbar_section .images .bar_timeline .content_heading h6 {
-  font-size: 18px;
+  font-size: clamp(0.9375rem, 0.5754rem + 0.458vw, 1.125rem);
   color: #f3311e;
 }
 .build_op_transfer .progbar_section .images .bar_timeline p {
-  font-size: 18px;
+  font-size: clamp(0.9375rem, 0.5754rem + 0.458vw, 1.125rem);
   font-weight: 100;
 }
 .build_op_transfer .progbar_section .preg_bar {
@@ -370,12 +370,12 @@ body {
   gap: 3rem;
 }
 .section_five .content_container .heading p {
-  font-size: 53px;
+  font-size: clamp(2.75rem, 1.6636rem + 1.374vw, 3.3125rem);
   color: #fff;
   text-align: center;
 }
 .section_five .content_container .heading h6 {
-  font-size: 8rem;
+  font-size: clamp(6rem, 2.1374rem + 4.8855vw, 8rem);
   font-family: "Behind_The_Nineties";
   color: #fff;
   font-weight: 300;
@@ -388,7 +388,7 @@ body {
 }
 .section_five .content_container .cta_contactus {
   font-family: "Aminute";
-  font-size: 22px;
+  font-size: clamp(1.125rem, 0.6422rem + 0.6107vw, 1.375rem);
   padding: 8px 20px;
   border-radius: 2rem;
   color: white;
@@ -419,14 +419,14 @@ body {
 }
 .faq-section .faq-left .faq-title .faq-heading_fa {
   font-weight: 500;
-  font-size: 53px;
+  font-size: clamp(2.75rem, 1.6636rem + 1.374vw, 3.3125rem);
   color: #2a2a2a;
 }
 .faq-section .faq-left .faq-title .faq-heading {
   font-family: "Behind_The_Nineties";
   font-style: italic;
   font-weight: 400;
-  font-size: 8rem;
+  font-size: clamp(6rem, 2.1374rem + 4.8855vw, 8rem);
   color: #2a2a2a;
 }
 .faq-section .faq-right {
@@ -443,7 +443,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 24px 0;
-  font-size: 18px;
+  font-size: clamp(0.9375rem, 0.5754rem + 0.458vw, 1.125rem);
   font-weight: 500;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -483,28 +483,28 @@ body {
   color: white;
 }
 .footer_container .footer_content .email {
-  font-size: 8rem;
+  font-size: clamp(6rem, 2.1374rem + 4.8855vw, 8rem);
   font-family: "Behind_The_Nineties";
   line-height: 1;
 }
 .footer_container .footer_content .question {
-  font-size: 53px;
+  font-size: clamp(2.75rem, 1.6636rem + 1.374vw, 3.3125rem);
   color: #ffffff;
 }
 .footer_container .footer_content .footer_cta {
-  font-size: 18px;
+  font-size: clamp(0.9375rem, 0.5754rem + 0.458vw, 1.125rem);
   display: flex;
   justify-content: space-between;
 }
 .footer_container .footer_content .footer_cta .cta_link {
-  font-size: 22px;
+  font-size: clamp(1.125rem, 0.6422rem + 0.6107vw, 1.375rem);
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 .footer_container .footer_content .footer_cta .cta_link span {
   display: inline-block;
-  font-size: 22px;
+  font-size: clamp(1.125rem, 0.6422rem + 0.6107vw, 1.375rem);
   font-weight: bolder;
   background: linear-gradient(to right, #2bf2e5, #073ce6, #ff40c4, #f22222, #ffb300);
   -webkit-background-clip: text;

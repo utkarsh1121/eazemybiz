@@ -25,12 +25,19 @@ $padding: 0 5rem;
 $marginSection: 7rem 0rem;
 $fontAminute: "Aminute";
 $fontNinties: "Behind_The_Nineties";
-$fontBody: 18px;
+// 18 to 15px from 1920 to 1265px
+$fontBody: clamp(0.9375rem, 0.5754rem + 0.458vw, 1.125rem);
 $fontBodySm: 16px;
-$fontCta: 22px;
-$fontHeading: 8rem;
-$fontHeroSub: 6rem;
-$fontSubheading: 53px;
+
+// 22 px to 18 px from 1920 to 1265px
+$fontCta: clamp(1.125rem, 0.6422rem + 0.6107vw, 1.375rem);
+// 8rem to 6rem from 1920 to 1265px
+$fontHeading: clamp(6rem, 2.1374rem + 4.8855vw, 8rem);
+//6 rem to 4 rem from 1920 to 1265px
+$fontHeroSub: clamp(4rem, 0.1374rem + 4.8855vw, 6rem);
+
+// 53 to 44px from 1920 to 1265 px
+$fontSubheading: clamp(2.75rem, 1.6636rem + 1.374vw, 3.3125rem);
 $bgColor: #f2f2f2;
 
 body {
@@ -52,7 +59,8 @@ body {
       width: 225px;
       height: auto;
       img {
-        width: 100%;
+        // 15rem to 11rem from 1920 to 1265px
+        width: clamp(11rem, 3.2748rem + 9.771vw, 15rem);
         height: auto;
         object-fit: cover;
       }
@@ -76,7 +84,8 @@ body {
     align-items: center;
 
     img {
-      width: 50rem;
+      //50 rem to 27 rem from 1920 to 1265px
+      width: clamp(27rem, -17.4198rem + 56.1832vw, 50rem);
       height: auto;
     }
     .hero_cta_content {
@@ -131,7 +140,8 @@ body {
       font-weight: 500;
     }
     img {
-      width: 65rem;
+      //65 rem to 45 rem from 1920 to 1265px
+      width: clamp(45rem, 6.374rem + 48.855vw, 65rem);
       height: auto;
     }
     .about_content_grid {
@@ -152,23 +162,27 @@ body {
     display: grid;
     margin-top: 4rem;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 12rem;
+    // 12rem to 4rem from 1920 to 1265px
+    gap: clamp(4rem, -11.4504rem + 19.542vw, 12rem);
     .grid_item {
       display: flex;
       gap: 3rem;
       flex-direction: column;
       img {
-        width: 12rem;
+        // 12 to 9rem from 1920 to 1265px
+        width: clamp(9rem, 3.2061rem + 7.3282vw, 12rem);
         height: auto;
       }
       &:nth-child(2) {
         img {
-          width: 9rem;
+          // 9rem to 6rem from 1920 to 1265 px
+          width: clamp(6rem, 0.2061rem + 7.3282vw, 9rem);
         }
       }
       &:nth-child(3) {
         img {
-          width: 4.4rem;
+          // 4.4 rem to 3rem from 1920 to 1265 px
+          width: clamp(3rem, 0.2962rem + 3.4198vw, 4.4rem);
         }
       }
       .grid_content {
@@ -454,18 +468,18 @@ body {
       margin: 2rem 0rem;
       height: 1.4rem;
       // position: relative;
-      .pline{
+      .pline {
         width: 100%;
         height: 100%;
         // background-color: transparent;
         background: linear-gradient(
-              to right,
-              #2bf2e5,
-              #073ce6,
-              #ff40c4,
-              #f22222,
-              #ffb300
-            ) ;
+          to right,
+          #2bf2e5,
+          #073ce6,
+          #ff40c4,
+          #f22222,
+          #ffb300
+        );
         border-radius: 16px;
       }
     }
@@ -597,14 +611,13 @@ body {
         line-height: 1.8;
         color: #777777;
         display: none;
-        
-        .one{
 
+        .one {
         }
-        // 
-      &.active{
-        display: block;
-      }
+        //
+        &.active {
+          display: block;
+        }
 
         p {
           margin: 0;
