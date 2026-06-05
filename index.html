@@ -106,7 +106,10 @@
       </div>
       <div class="grid grid_question_container">
         <div class="options">
-          <div onclick="showoptions('result_one')" class="option_one opt active">
+          <div
+            onclick="showoptions('result_one')"
+            class="option_one opt active"
+          >
             <span>Strategy and Growth</span>
           </div>
           <div onclick="showoptions('result_two')" class="option_two opt">
@@ -117,7 +120,7 @@
           </div>
         </div>
         <div class="result">
-          <div class="result_one one active ">
+          <div class="result_one one active">
             <ul>
               <li>
                 Strategy Development and Implementation in a price sensitive,
@@ -202,9 +205,11 @@
             <img src="asset/task.svg" alt="task" />
           </div>
         </div>
-        <div class="preg_bar"></div>
+        <div class="preg_bar">
+          <div class="pline"></div>
+        </div>
         <div class="images">
-          <div class="bar_timeline content_1">
+          <div class="bar_timeline content_1 one">
             <div class="mark">
               <span class="circle"></span>
               <div class="line"></div>
@@ -219,7 +224,7 @@
             </p>
           </div>
 
-          <div class="bar_timeline content_1">
+          <div class="bar_timeline content_1 two">
             <div class="mark">
               <span class="circle"></span>
               <div class="line"></div>
@@ -234,7 +239,7 @@
             </p>
           </div>
 
-          <div class="bar_timeline content_1">
+          <div class="bar_timeline content_1 three">
             <div class="mark">
               <span class="circle"></span>
               <div class="line"></div>
@@ -249,7 +254,7 @@
             </p>
           </div>
 
-          <div class="bar_timeline content_1">
+          <div class="bar_timeline content_1 four">
             <div class="mark">
               <span class="circle"></span>
               <div class="line"></div>
@@ -284,16 +289,20 @@
         <div class="faq-left">
           <h2 class="faq-title">
             <span class="faq-heading_fa">Frequently Asked</span>
-            <span class="faq-heading">Questions?</span>
+            <span class="faq-heading"
+              >Questions<span style="display: inline-block" class="faq_quemark"
+                >?</span
+              ></span
+            >
           </h2>
         </div>
         <div class="faq-right">
-          <details open class="faq-item">
-            <summary class="faq-question">
+          <div class="faq-item">
+            <div onclick="faqToggle(this)" class="faq-question one">
               <span>What services do you offer?</span>
-              <span class="faq-icon">x</span>
-            </summary>
-            <div class="faq-answer">
+              <span class="faq-icon">×</span>
+            </div>
+            <div class="faq-answer active">
               <p>
                 We offer a comprehensive range of marketing services including
                 market research, brand development, digital marketing
@@ -303,14 +312,14 @@
                 ensure effective and measurable results.
               </p>
             </div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-question">
+          </div>
+          <div class="faq-item">
+            <div onclick="faqToggle(this)" class="faq-question two">
               <span
                 >How can your marketing strategies help my business grow?</span
               >
-              <span class="faq-icon"></span>
-            </summary>
+              <span class="faq-icon">+</span>
+            </div>
             <div class="faq-answer">
               <p>
                 Our tailored marketing strategies focus on identifying growth
@@ -319,37 +328,39 @@
                 operations.
               </p>
             </div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-question">
-              <span>What industries do you specialize in?</span>
-              <span class="faq-icon"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>
-                We specialize in FMCG, personal care, home care, and retail,
-                working closely with both large enterprises and promoter-led SME
-                families to scale their presence.
-              </p>
-            </div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-question">
+          </div>
+          <div class="faq-item">
+            <div onclick="faqToggle(this)" class="faq-question three">
               <span
-                >How do you measure the success of your marketing
-                campaigns?</span
+                >How can your marketing strategies help my business grow?</span
               >
-              <span class="faq-icon"></span>
-            </summary>
+              <span class="faq-icon">+</span>
+            </div>
             <div class="faq-answer">
               <p>
-                We track key performance indicators (KPIs) such as customer
-                acquisition cost, conversion rates, sales growth, brand
-                awareness lift, and campaign-specific metrics to evaluate
-                performance.
+                Our tailored marketing strategies focus on identifying growth
+                opportunities, optimizing campaigns, and aligning branding with
+                business objectives to maximize ROI and scale business
+                operations.
               </p>
             </div>
-          </details>
+          </div>
+          <div class="faq-item">
+            <div onclick="faqToggle(this)" class="faq-question four">
+              <span
+                >How can your marketing strategies help my business grow?</span
+              >
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer four">
+              <p>
+                Our tailored marketing strategies focus on identifying growth
+                opportunities, optimizing campaigns, and aligning branding with
+                business objectives to maximize ROI and scale business
+                operations.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
